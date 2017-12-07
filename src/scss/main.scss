@@ -1,5 +1,6 @@
-/** Import variables */
-@import "common/variables";
+/** Import variables & minxins */
+@import "helpers/variables";
+@import "helpers/mixins";
 
 /** Import les librairies */
 // @import "./autoload/**/*";
@@ -11,6 +12,7 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
+@import "~normalize.css";
 
 /** Import Google Font */
 
@@ -18,7 +20,9 @@
 //Common
 @import "common/global";
 @import "common/typography";
-@import "common/classes";
+
+//Helpers
+@import "helpers/classes";
 
 //Components
 @import "components/buttons";

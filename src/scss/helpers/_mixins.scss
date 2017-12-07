@@ -1,4 +1,29 @@
+@mixin desktop() {
+  @media screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
 
 @mixin tablet() {
-  @media #{$bp-babybear}  { @content; }
+  @media screen and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media screen and (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin landscape() {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin print() {
+  @media print {
+    @content;
+  }
 }

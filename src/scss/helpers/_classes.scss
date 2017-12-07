@@ -1,5 +1,10 @@
-.hide { display: none; }
-.invisible { opacity: 0; }
+.hide {
+  display: none;
+}
+
+.invisible {
+  opacity: 0;
+}
 
 .full {
   &.container {
@@ -7,5 +12,26 @@
     >.content {
       margin-left: -$gap-global;
     }
+  }
+}
+
+@include desktop {
+  .hide_desktop {
+    display: none !important;
+  }
+}
+
+@include tablet {
+  .hide_tablet {
+    display: none !important;
+  }
+  .full.container > .content {
+    margin-left: -$gap-global-small;
+  }
+}
+
+@include mobile {
+  .hide_mobile {
+    display: none !important;
   }
 }

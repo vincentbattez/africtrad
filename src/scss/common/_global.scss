@@ -1,14 +1,24 @@
 body {
   width: 100%;
 }
-main{
+
+main {
   width: 100%;
 }
-.container{
+
+.container {
   width: 100%;
   max-width: $maxwidth-global;
   margin: 0 auto;
-  .content{
+  .content {
     padding: 0 $gap-global;
+  }
+}
+
+@include mobile {
+  .container {
+    .content {
+      padding: 0 $gap-global-small;
+    }
   }
 }

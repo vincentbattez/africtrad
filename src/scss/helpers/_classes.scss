@@ -25,9 +25,6 @@
   .hide_tablet {
     display: none !important;
   }
-  .full.container > .content {
-    margin-left: -$gap-global-small;
-  }
 }
 
 @include mobile {

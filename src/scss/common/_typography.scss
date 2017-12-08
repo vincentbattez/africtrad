@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', Helvetica, Roboto, Arial, sans-serif;
-  font-size: 16px;
+  font-size: $p;
   color: $black;
   line-height: 20px;
 }
@@ -21,6 +21,10 @@ body {
     margin-bottom: 43px;
     background-color: $primary;
   }
+}
+
+.h3 {
+  color: $primary;
 }
 
 .center .h2:after {

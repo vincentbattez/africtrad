@@ -18,6 +18,8 @@
 .bg-primary{ background-color: $primary; }
 
 .center{ text-align: center; }
+.left{ text-align: left; }
+.right{ text-align: right; }
 
 
 @include desktop {

@@ -15,6 +15,10 @@
   }
 }
 
+.bg-grey{
+  background-color: $grey--l1;
+}
+
 @include desktop {
   .hide_desktop {
     display: none !important;

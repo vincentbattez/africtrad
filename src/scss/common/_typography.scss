@@ -35,6 +35,14 @@ a{
     margin-right: auto;
 }
 
+.right .h2:after {
+    margin-left: auto;
+}
+
+.left .h2:after {
+    margin-right: auto;
+}
+
 .bg-primary {
   .h2, p {
     color: white;

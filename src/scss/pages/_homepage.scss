@@ -3,4 +3,20 @@
     display: flex;
     justify-content: space-around;
   }
+  .quote {
+    font-style: italic;
+    font-size: 24px;
+    color: $primary;
+    font-family: 'Playfair Display';
+  }
+  .big {
+    font-size: 64px;
+    padding-top: 2.5rem;
+  }
+  .equipe a {
+    display: block;
+  }
+  .form {
+    width: 60%;
+  }
 }

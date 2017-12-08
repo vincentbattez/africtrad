@@ -11,12 +11,20 @@
   }
   .big {
     font-size: 64px;
-    padding-top: 2.5rem;
   }
   .equipe a {
     display: block;
   }
   .form {
     width: 60%;
+  }
+  .coordonnees {
+    width: 40%;
+  }
+  .infos {
+    display: flex;
+  }
+  .icon-info {
+    width: 40px;
   }
 }

@@ -1,2 +1,15 @@
 .btn{
+  padding: 10px 30px;
+  border: 1px solid $primary;
+  border-radius: 100px;
+  color: $primary;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.bg-primary{
+  .btn{
+    border-color: transparent;
+    background-color: white;
+  }
 }

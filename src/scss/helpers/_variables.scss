@@ -1,10 +1,14 @@
 /** Colors */
 $primary: #FEA10C;
 $secondary: #0b0726;
-$black: #4A4A4A;
+$black: #333333;
 $grey--l1: #F9F9F9;
 
 $pathIMG: "/src/img";
+
+//Titles
+$h1: 60px;
+$h2: 30px;
 
 // Gap
 $gap-global: 20px;
@@ -13,6 +17,6 @@ $gap-global-small: 40px;
 $maxwidth-global: 1024px;
 
 // Medias
-$tablet: 767px;
-$mobile: 991px;
+$mobile: 767px;
+$tablet: 991px;
 $desktop: 991px;

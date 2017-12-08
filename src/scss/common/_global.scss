@@ -8,9 +8,9 @@ main {
 
 .container {
   width: 100%;
-  max-width: $maxwidth-global;
-  margin: 0 auto;
   .content {
+    max-width: $maxwidth-global;
+    margin: 0 auto;
     padding: 0 $gap-global;
   }
 }

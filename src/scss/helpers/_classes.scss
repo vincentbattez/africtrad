@@ -8,16 +8,17 @@
 
 .full {
   &.container {
-    max-width: none;
     >.content {
-      margin-left: -$gap-global;
+      // margin-left: -$gap-global;
     }
   }
 }
 
-.bg-grey{
-  background-color: $grey--l1;
-}
+.bg-grey{ background-color: $grey--l1; }
+.bg-primary{ background-color: $primary; }
+
+.center{ text-align: center; }
+
 
 @include desktop {
   .hide_desktop {

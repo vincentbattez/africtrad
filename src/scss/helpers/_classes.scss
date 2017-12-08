@@ -15,7 +15,11 @@
 }
 
 .bg-grey{ background-color: $grey--l1; }
-.bg-primary{ background-color: $primary; }
+.bg-primary{
+  background-color: $primary;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
 
 .center{ text-align: center; }
 

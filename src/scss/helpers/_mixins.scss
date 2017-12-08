@@ -27,3 +27,15 @@
     @content;
   }
 }
+
+@mixin centerABS-x() {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+@mixin centerABS-y() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+}

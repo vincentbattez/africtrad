@@ -1,3 +1,30 @@
 .homepage {
-  // code pour la homepage
+  .img-services {
+    display: flex;
+    justify-content: space-around;
+  }
+  .quote {
+    font-style: italic;
+    font-size: 24px;
+    color: $primary;
+    font-family: 'Playfair Display';
+  }
+  .big {
+    font-size: 64px;
+  }
+  .equipe a {
+    display: block;
+  }
+  .form {
+    width: 60%;
+  }
+  .coordonnees {
+    width: 40%;
+  }
+  .infos {
+    display: flex;
+  }
+  .icon-info {
+    width: 40px;
+  }
 }

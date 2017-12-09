@@ -15,7 +15,7 @@
 @import "~normalize.css";
 
 /** Import Google Font */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,700,400i');
 
 //Common
 @import "common/global";
@@ -26,11 +26,13 @@
 
 //Components
 @import "components/buttons";
+@import "components/listflag";
 
 //Layouts
 @import "layouts/header";
 @import "layouts/navbar";
 @import "layouts/footer";
+@import "layouts/form";
 
 //Pages
 @import "pages/homepage";

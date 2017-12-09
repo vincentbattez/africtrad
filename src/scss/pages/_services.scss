@@ -2,4 +2,21 @@
   .header{
     background-image: url('#{$pathIMG}/services/header-services.jpg');
   }
+  .cours{
+    .list{
+      display: flex;
+      justify-content: space-around;
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 45px;
+      .type{
+        font-family: 'Open Sans', Helvetica, Roboto, Arial, sans-serif;
+        font-weight: normal;
+        font-size: $p;
+      }
+    }
+  }
+  .devis{
+    margin-top: 80px;
+  }
 }

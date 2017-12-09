@@ -15,10 +15,41 @@
 }
 
 .bg-grey{ background-color: $grey--l1; }
-.bg-primary{ background-color: $primary; }
+.bg-primary{
+  background-color: $primary;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
 
 .center{ text-align: center; }
+.left{ text-align: left; }
+.right{ text-align: right; }
 
+.diago {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding-top: 80px;
+  padding-bottom: 110px;
+  position: relative;
+  &:after,
+  &:before {
+    width: 100%;
+    height: 80px;
+    content: '';
+    display: block;
+    position: absolute;
+    background: white;
+    transform: rotate(-2deg);
+  }
+  &:before {
+    left: 0;
+    top: -45px;  
+  }
+  &:after {
+    right: 0;
+    bottom: -45px;
+  }
+}
 
 @include desktop {
   .hide_desktop {

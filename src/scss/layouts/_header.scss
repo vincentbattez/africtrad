@@ -16,3 +16,14 @@
     margin: 0;
   }
 }
+
+@include mobile {
+  .header{
+    .content{
+      bottom: 40px;
+    }
+    .header_h1{
+      font-size: 30px;
+    }
+  }
+}

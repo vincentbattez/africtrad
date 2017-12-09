@@ -6,4 +6,40 @@
   }
 
 
+  .about1{
+
+    .bras{
+
+      img{
+        width: 50vh
+      }
+
+      &.bras--gauche{
+        /*position: absolute;
+        float: left;*/
+      }
+
+    }
+
+  }
+
+  .about2{
+
+    .bras{
+      display: block;
+
+      img{
+        width: 50vh
+      }
+
+      &.bras--gauche{
+        /*position: absolute;
+        float: left;*/
+      }
+
+    }
+
+  }
+
+
 }

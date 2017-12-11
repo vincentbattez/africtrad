@@ -8,22 +8,35 @@
 
   .about1{
 
-    .bras{
 
+    .bras{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+      grid-auto-rows: minmax(auto, auto);
+      &.bras--left{
+        grid-column: 1;
+        grid-row: 1;
+      }
+      &.bras--droit{
+        grid-column: 2 ;
+        grid-row: 1;
+      }
       img{
         width: 50vh
       }
 
-      &.bras--gauche{
-        /*position: absolute;
-        float: left;*/
-      }
+
 
     }
 
   }
 
   .about2{
+
+    h2{
+      float: right;
+    }
 
     .bras{
       display: block;
@@ -32,10 +45,12 @@
         width: 50vh
       }
 
-      &.bras--gauche{
-        /*position: absolute;
-        float: left;*/
-      }
+      // &.bras--gauche{
+      //   float: left;
+      // }
+      // &.bras--droit{
+      //   float: right;
+      // }
 
     }
 

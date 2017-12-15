@@ -6,6 +6,13 @@ input, textarea {
 input {
   height: 40px;
   margin: 5px 0 30px 0;
+  &.btn {
+    width: auto;
+    background-color: $primary;
+    color: #fff;
+    float: right;
+    margin-top: 30px;
+  }
 }
 textarea {
   height: 100px;

@@ -43,11 +43,14 @@
   }
   &:before {
     left: 0;
-    top: -45px;  
+    top: -45px;
   }
   &:after {
     right: 0;
     bottom: -45px;
+  }
+  .big {
+    margin-top: 0;
   }
 }
 

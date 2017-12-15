@@ -2,6 +2,7 @@
   .img-services {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 30px;
   }
   .quote {
     font-style: italic;
@@ -9,21 +10,29 @@
     color: $primary;
     font-family: 'Playfair Display';
   }
-  .equipe a {
-    display: block;
-  }
   .infos {
     display: flex;
     .form {
       width: 60%;
     }
     .coordonnees {
-      width: 40%;
+      padding-left: 50px;
+      padding-top: 25px;
       .icon-info {
         width: 40px;
       }
       .coordonnee {
-        display: inline-block;
+        margin-bottom: 30px;
+        p {
+          display: inline-block;
+          margin-left: 20px;
+          margin-top: 0;
+          margin-bottom: 0;
+          vertical-align: middle;
+        }
+        img {
+          vertical-align: middle;
+        }
       }
     }
   }

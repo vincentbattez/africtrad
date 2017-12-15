@@ -3,6 +3,7 @@
   height: 40vh;
   text-align: center;
   background-size: cover;
+  background-repeat: no-repeat;
   .content{
     position: absolute;
     @include centerABS-x();

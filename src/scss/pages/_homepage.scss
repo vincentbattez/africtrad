@@ -9,22 +9,22 @@
     color: $primary;
     font-family: 'Playfair Display';
   }
-  .big {
-    font-size: 64px;
-  }
   .equipe a {
     display: block;
   }
-  .form {
-    width: 60%;
-  }
-  .coordonnees {
-    width: 40%;
-  }
   .infos {
     display: flex;
-  }
-  .icon-info {
-    width: 40px;
+    .form {
+      width: 60%;
+    }
+    .coordonnees {
+      width: 40%;
+      .icon-info {
+        width: 40px;
+      }
+      .coordonnee {
+        display: inline-block;
+      }
+    }
   }
 }

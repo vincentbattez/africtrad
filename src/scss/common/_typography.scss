@@ -49,6 +49,16 @@ a{
   .h2, p {
     color: white;
   }
+  .big {
+    font-size: 64px;
+    margin-top: 0;
+    &:after {
+      display: none;
+    }
+  }
+  p {
+    margin-bottom: 40px;
+  }
 }
 
 @include mobile {

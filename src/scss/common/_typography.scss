@@ -26,6 +26,11 @@ a{
     margin-bottom: 43px;
     background-color: $primary;
   }
+  &.right{
+    &::after{
+      margin-left: auto;
+    }
+  }
 }
 
 .h3 {

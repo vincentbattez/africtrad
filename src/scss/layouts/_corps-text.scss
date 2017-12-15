@@ -49,16 +49,17 @@
 
   @include tablet{
     & > section {
-
       .texte_image{
         flex-direction: column;
-      }
-      .image{
-        img{
-          margin: auto;
-          width: 100%;
+        .image{
+          img{
+            margin: auto;
+            text-align: center;
+            width: 100%;
+          }
         }
       }
+
       &:nth-child(odd) {
         // impaire
         .image{

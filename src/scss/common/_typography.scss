@@ -8,6 +8,7 @@ p{
 }
 
 a{
+  color: $secondary;
   text-decoration: none;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
@@ -54,6 +55,24 @@ a{
   .h2, p {
     color: white;
   }
+  .big {
+    font-size: 64px;
+    &:after {
+      display: none;
+    }
+  }
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+.list--inline .item{
+  display: inline-block;
+}
+
+ul{
+  padding: 0;
+
 }
 
 @include mobile {

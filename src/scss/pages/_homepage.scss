@@ -2,6 +2,7 @@
   .img-services {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 30px;
   }
   .quote {
     font-style: italic;
@@ -9,22 +10,30 @@
     color: $primary;
     font-family: 'Playfair Display';
   }
-  .big {
-    font-size: 64px;
-  }
-  .equipe a {
-    display: block;
-  }
-  .form {
-    width: 60%;
-  }
-  .coordonnees {
-    width: 40%;
-  }
   .infos {
     display: flex;
-  }
-  .icon-info {
-    width: 40px;
+    .form {
+      width: 60%;
+    }
+    .coordonnees {
+      padding-left: 50px;
+      padding-top: 25px;
+      .icon-info {
+        width: 40px;
+      }
+      .coordonnee {
+        margin-bottom: 30px;
+        p {
+          display: inline-block;
+          margin-left: 20px;
+          margin-top: 0;
+          margin-bottom: 0;
+          vertical-align: middle;
+        }
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
   }
 }

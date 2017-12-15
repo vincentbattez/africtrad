@@ -4,6 +4,7 @@
   text-align: center;
   background-size: cover;
   .content{
+    position: absolute;
     @include centerABS-x();
     bottom: 110px;
   }

@@ -6,22 +6,32 @@
   }
 
   .item {
-    margin-right : 20px;
+    a {
+      margin-right : 20px;
+      transition   : all 300ms;
+    }
+
     &:before {
-      content       : '';
-      display       : inline-block;
-      position      : relative;
-      width         : 10px;
-      height        : 10px;
-      margin-right  : 10px;
-      border-radius : 50%;
-      background-color: $secondary;
+      content          : '';
+      display          : inline-block;
+      position         : relative;
+      width            : 10px;
+      height           : 10px;
+      margin-right     : 10px;
+      border-radius    : 50%;
+      background-color : $secondary;
     }
-    &.active:before{
-      background-color: $primary;
+
+    &.active:before {
+      background-color : $primary;
     }
-    &.logo:before{
-      display: none;
+
+    &.logo:before {
+      display : none;
+    }
+
+    &:hover a {
+      color : $primary;
     }
   }
 }

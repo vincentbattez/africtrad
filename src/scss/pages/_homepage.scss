@@ -1,4 +1,17 @@
 .homepage {
+  .header {
+    background-image: url('#{$pathIMG}/homepage/header.jpg');
+    .logo {
+      width: 70%;
+    }
+    .header_h2 {
+      font-style: italic;
+      color: #fff;
+    }
+    .arrow {
+      width: 3%;
+    }
+  }
   .img-services {
     display: flex;
     justify-content: space-around;

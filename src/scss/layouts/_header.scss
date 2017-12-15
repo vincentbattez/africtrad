@@ -5,6 +5,7 @@
   background-size: cover;
   @extend .overlay;
   .content{
+    position: absolute;
     @include centerABS-x();
     bottom: 110px;
   }

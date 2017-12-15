@@ -1,3 +1,27 @@
-.main__nav {
-  // code nav
+.nav__main {
+  img {
+    width          : 50px;
+    margin-right   : 20px;
+    vertical-align : middle;
+  }
+
+  .item {
+    margin-right : 20px;
+    &:before {
+      content       : '';
+      display       : inline-block;
+      position      : relative;
+      width         : 10px;
+      height        : 10px;
+      margin-right  : 10px;
+      border-radius : 50%;
+      background-color: $secondary;
+    }
+    &.active:before{
+      background-color: $primary;
+    }
+    &.logo:before{
+      display: none;
+    }
+  }
 }

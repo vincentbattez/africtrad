@@ -41,11 +41,12 @@
   <!-- NAV -->
   <nav class="nav__main container" role="navigation">
     <div class="content">
-      <ul class="list">
-        <li class="item" role="menuitem">Accueil</li>
-        <li class="item" role="menuitem">A propos</li>
-        <li class="item" role="menuitem">Services</li>
-        <li class="item" role="menuitem">Devis & forfaits</li>
+      <ul class="list list--inline">
+        <li class="item logo" role="menuitem"><a href="/"><img src="./src/img/logo-solo.svg" alt="Logo de africtrad"></a></li>
+        <li class="item" role="menuitem"><a href="/">Accueil</a></li>
+        <li class="item active" role="menuitem"><a href="about.html">A propos</a></li>
+        <li class="item" role="menuitem"><a href="services.html">Services</a></li>
+        <li class="item" role="menuitem"><a href="devis.html">Devis & forfaits</a></li>
       </ul>
     </div>
   </nav>
@@ -53,56 +54,56 @@
   <!-- MAIN CONTENT -->
   <main role="main">
     <!-- SECTION 1 -->
-    <section class="container about1">
-      <div class="content grid">
-        <h2 class="h2">Qui somme nous</h2>
-        <div class="texte_image image--right">
-          <div class="texte">
-            <p>Africtrad fournit des services de traduction, d'interprétation et de coaching en langues.</p>
-            <p>Nous couvrons les principales langues officielles africaines et internationales
-              (anglais, français, arabe, portugais, espagnol). Nous couvrons également le chinois, l'allemand et bien d'autres encore. </p>
-            <p>Notre service est de qualité internationale et nous insistons particulièrement sur la précision,
-              la rapidité (grâce à notre réseau de traducteurs et à l'utilisation des outils d'aide à la traduction) et la ponctualité. </p>
-            <p>Grâce à notre positionnement en Afrique de l'ouest (Abidjan et Dakar),
-              nous offrons des tarifs très compétitifs. Africtrad permet aux entreprises,
-              ONG, aux agences gouvernementales et aux particuliers de communiquer et de se développer
-              à l'international.Nous mettons également à votre disposition notre équipe d'interprètes de
-              conférence aguerris pour vos réunions multilingues. Enfin, nous vous offrons des cours de
-              langues en ligne ou en présentiel pour vous aider à vous perfectionner notamment en expression
-              orale, et vous permettre ainsi de mieux communiquer avec vos partenaires étrangers. </p>
-          </div>
-          <div class="image">
-            <img class="hexagon" src="src/img/about/about1.jpg" alt="header">
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="container about2">
-      <div class="content">
-        <h2 class="h2 right">Quels sont nos objectifs</h2>
-        <div class="texte_image image--left">
-          <div class="image">
-            <img class="hexagon" src="src/img/about/about2.jpg" alt="header">
-          </div>
-          <div class="texte">
-            <p>Africtrad a pour ambition d’offrir des services linguistiques
-              (traduction, interprétation de conférence et cours de langues en ligne)
-              de très haute qualité. Fort de notre ancrage ouest-africain et de notre ouverture
-              sur le reste du monde, nous avons fait le pari de la qualité et de tarifs très compétitifs.</p>
-            <p>Nos collaborateurs, en interne comme en externe, mettent tout en œuvre pour répondre en temps et en heure
-              aux besoins de nos clients (particuliers et institutionnels) en mettant en avant : le professionnalisme,
-              la réactivité, la rigueur et la ponctualité. Chaque projet est personnalisé et reçoit toute l’attention requise
-              de la part de nos équipes.</p>
-            <p>Nous vous accompagnons de la demande du devis à la livraison. Notre objectif étant de vous satisfaire
-              et de contribuer à votre développement. Nous sommes là pour traduire vos projets en réussite. Plus que
-              des clients, vous êtes nos partenaires. Ensemble, relevons les défis et évoluons ensemble !</p>
+    <div class="corps-text">
+      <section class="container">
+        <div class="content grid">
+          <h2 class="h2">Qui somme nous</h2>
+          <div class="texte_image">
+            <div class="texte">
+              <p>Africtrad fournit des services de traduction, d'interprétation et de coaching en langues.</p>
+              <p>Nous couvrons les principales langues officielles africaines et internationales
+                (anglais, français, arabe, portugais, espagnol). Nous couvrons également le chinois, l'allemand et bien d'autres encore. </p>
+              <p>Notre service est de qualité internationale et nous insistons particulièrement sur la précision,
+                la rapidité (grâce à notre réseau de traducteurs et à l'utilisation des outils d'aide à la traduction) et la ponctualité. </p>
+              <p>Grâce à notre positionnement en Afrique de l'ouest (Abidjan et Dakar),
+                nous offrons des tarifs très compétitifs. Africtrad permet aux entreprises,
+                ONG, aux agences gouvernementales et aux particuliers de communiquer et de se développer
+                à l'international.Nous mettons également à votre disposition notre équipe d'interprètes de
+                conférence aguerris pour vos réunions multilingues. Enfin, nous vous offrons des cours de
+                langues en ligne ou en présentiel pour vous aider à vous perfectionner notamment en expression
+                orale, et vous permettre ainsi de mieux communiquer avec vos partenaires étrangers. </p>
+            </div>
+            <div class="image">
+              <img class="hexagon" src="src/img/about/about1.jpg" alt="header">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
+      </section>
+      <!-- SECTION 2 -->
+      <section class="container">
+        <div class="content">
+          <h2 class="h2">Quels sont nos objectifs</h2>
+          <div class="texte_image">
+            <div class="texte">
+              <p>Africtrad a pour ambition d’offrir des services linguistiques
+                (traduction, interprétation de conférence et cours de langues en ligne)
+                de très haute qualité. Fort de notre ancrage ouest-africain et de notre ouverture
+                sur le reste du monde, nous avons fait le pari de la qualité et de tarifs très compétitifs.</p>
+                <p>Nos collaborateurs, en interne comme en externe, mettent tout en œuvre pour répondre en temps et en heure
+                  aux besoins de nos clients (particuliers et institutionnels) en mettant en avant : le professionnalisme,
+                  la réactivité, la rigueur et la ponctualité. Chaque projet est personnalisé et reçoit toute l’attention requise
+                  de la part de nos équipes.</p>
+                  <p>Nous vous accompagnons de la demande du devis à la livraison. Notre objectif étant de vous satisfaire
+                    et de contribuer à votre développement. Nous sommes là pour traduire vos projets en réussite. Plus que
+                    des clients, vous êtes nos partenaires. Ensemble, relevons les défis et évoluons ensemble !</p>
+                  </div>
+            <div class="image">
+              <img class="hexagon" src="src/img/about/about2.jpg" alt="header">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
 

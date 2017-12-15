@@ -1,0 +1,73 @@
+.corps-text {
+  // se symbole ">" veut dire : ENFANT DIRECT
+  & > section {
+    display: flex;
+    .texte_image{
+      display: flex;
+      &.image--left{
+        .image{
+          margin-right: 25px;
+        }
+      }
+
+      &.image--right{
+        .image{
+          margin-left: 25px
+        }
+      }
+
+      .image{
+        img{
+          width: 300px;
+        }
+      }
+
+    }
+    &:nth-child(odd) {
+      // impaire
+      .image{
+        order: 2;
+      }
+      .texte {
+        order: 1;
+        margin-right: 20px;
+      }
+    }
+    &:nth-child(even) {
+      // paire
+      .image{
+        order: 1;
+      }
+      .texte {
+        order: 2;
+        margin-left: 20px;
+      }
+    }
+  }
+
+
+
+  @include tablet{
+    & > section {
+
+      .texte_image{
+        flex-direction: column;
+      }
+      .image{
+        img{
+          margin: auto;
+          width: 100%;
+        }
+      }
+      &:nth-child(odd) {
+        // impaire
+        .image{
+          order: 1;
+        }
+        .texte {
+          order: 2;
+        }
+      }
+    }
+  }
+}

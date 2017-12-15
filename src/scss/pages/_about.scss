@@ -5,30 +5,20 @@
     background-position: 0 -40px;
   }
 
-  .texte_image{
-    display: flex;
-
-    &.image--left{
-      .image{
-        margin-right: 25px;
+  @include tablet{
+    .header{
+      background-position: 0 0px;
+    }
+    .h2{
+      text-align: center;
+      &::after{
+        margin-left: auto;
+        margin-right: auto;
       }
     }
-
-    &.image--right{
-      .image{
-        margin-left: 25px
-      }
+    p{
+      text-align: center;
     }
-
-    .image{
-      img{
-        width: 300px;
-      }
-    }
-
   }
 
-  @@include tablet{}
-
-  }
 }

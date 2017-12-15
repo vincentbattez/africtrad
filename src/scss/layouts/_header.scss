@@ -3,6 +3,7 @@
   height: 40vh;
   text-align: center;
   background-size: cover;
+  @extend .overlay;
   .content{
     @include centerABS-x();
     bottom: 110px;

@@ -14,6 +14,14 @@
   }
 }
 
+.overlay:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #ffffff14;
+  }
+
 .bg-grey{ background-color: $grey--l1; }
 .bg-primary{
   background-color: $primary;

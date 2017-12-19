@@ -21,6 +21,11 @@
           width: 300px;
         }
       }
+      .texte{
+        a{
+          color: $primary
+        }
+      }
 
     }
     &:nth-child(odd) {

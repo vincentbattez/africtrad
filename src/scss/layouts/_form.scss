@@ -1,11 +1,12 @@
-input, textarea {
+input, textarea, select {
   width: 100%;
   background-color: $grey;
   border: none;
 }
-input {
+input,select {
   height: 40px;
   margin: 5px 0 30px 0;
+  padding: 10px;
   &.btn {
     width: auto;
     background-color: $primary;
@@ -15,7 +16,38 @@ input {
     cursor: pointer;
   }
 }
+label{
+  display: block;
+  text-align: left;
+}
 textarea {
   height: 100px;
   margin-top: 5px;
+}
+.form{
+    max-width: 800px;
+    margin: 0 auto;
+    .col--2{
+      display: flex;
+      .col{
+    display: inline-block;
+    width: 50%;
+    &:first-child{
+      margin-right: 20px;
+    }
+    }
+  }
+    input{
+      &.btn{
+        float: initial;
+      }
+  }
+  @include tablet{
+      .col--2{
+        display: block;
+        .col{
+          width: 100%;
+        }
+      }
+  }
 }

@@ -71,32 +71,61 @@
       <section class="container form_devis">
           <div class="content center">
             <h2 class="h2">Demande de devis</h2>
-              <div class="form form_devis">
+              <div class="form">
                 <form>
-                  <div class="ligne1">
-                  <label for="name">Nom*</label>
-                  <input type="text" name="name" required>
-
-                  <label for="surname">Prénom*</label>
-                  <input type="text" name="surname" required>
-                </div>
-                <div class="ligne2">
-                  <label for="email">Email*</label>
-                  <input type="email" name="email" required>
-
-                  <label for="service">Service*</label>
-                  <input type="text" name="service" required>
-                </div>
-                <div class="ligne3">
-                  <label for="langueS">Langue source*</label>
-                  <input type="text" name="langueS" required>
-
-                  <label for="langueA">Langue d'arrivée*</label>
-                  <input type="text" name="langueA" required>
-                </div>
-                <div class="ligne4">
-                  <label for="message">Message*</label>
-                  <textarea name="message" required></textarea>
+                  <div class="col--2">
+                    <div class="col">
+                      <label for="name">Nom*</label>
+                      <input type="text" name="name" required>
+                    </div>
+                    <div class="col">
+                      <label for="surname">Prénom*</label>
+                      <input type="text" name="surname" required>
+                    </div>
+                  </div>
+                  <div class="col--1">
+                    <div class="col">
+                      <label for="email">Email*</label>
+                      <input type="email" name="email" required>
+                    </div>
+                  </div>
+                  <div class="col--1">
+                    <div class="col">
+                      <label for="service">Service*</label>
+                      <select name="service">
+                        <option value="traduction" selected>Traduction</option>
+                        <option value="cours">Cours de langues</option>
+                        <option value="interprétation">Interprétation</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col--2">
+                    <div class="col">
+                    <label for="langueS">Langue source*</label>
+                      <select name="langueS">
+                        <option value="fr" selected>Français</option>
+                        <option value="en">Anglais</option>
+                        <option value="es">Espagnol</option>
+                        <option value="pt">Portuguais</option>
+                        <option value="ar">Arabe</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="langueA">Langue d'arrivée*</label>
+                        <select name="langueA">
+                          <option value="fr">Français</option>
+                          <option value="en" selected>Anglais</option>
+                          <option value="es">Espagnol</option>
+                          <option value="pt">Portuguais</option>
+                          <option value="ar">Arabe</option>
+                      </select>
+                    </div>
+                  </div>
+                <div class="col--1">
+                  <div class="col">
+                    <label for="message">Message*</label>
+                    <textarea name="message" required></textarea>
+                  </div>
                 </div>
                   <input type="submit" class="btn" value="Envoyer">
                 </form>

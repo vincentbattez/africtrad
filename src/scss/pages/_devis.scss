@@ -8,5 +8,11 @@
   .amorce_contact{
     margin-top: 25px;
   }
+  
+  @include tablet{
+    .header{
+      background-position: 0 0px;
+    }
+  }
 
 }

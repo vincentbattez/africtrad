@@ -4,8 +4,7 @@
   }
   .cours{
     .list{
-      display: flex;
-      justify-content: space-around;
+      display: inline-block;
       width: 70%;
       margin: 0 auto;
       margin-top: 45px;
@@ -18,5 +17,6 @@
   }
   .devis{
     margin-top: 80px;
+    margin-bottom: -$mtfooter;
   }
 }

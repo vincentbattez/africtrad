@@ -19,11 +19,11 @@
       height           : 10px;
       margin-right     : 10px;
       border-radius    : 50%;
-      background-color : $secondary;
+      background-color : $secondary!important;
     }
 
     &.active:before {
-      background-color : $primary;
+      background-color : $primary!important;
     }
 
     &.logo:before {
@@ -32,6 +32,21 @@
 
     &:hover a {
       color : $primary;
+    }
+  }
+}
+
+@include mobile(min) {
+  .list.list--inline .item.hamburger{
+    display: none;
+  }
+}
+@include mobile {
+  .nav__main {
+    .list {
+      .item:not(.logo, .hamburger) {
+        display: none;
+      }
     }
   }
 }

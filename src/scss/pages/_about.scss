@@ -5,56 +5,20 @@
     background-position: 0 -40px;
   }
 
-
-  .about1{
-
-
-    .bras{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 15px;
-      grid-auto-rows: minmax(auto, auto);
-      &.bras--left{
-        grid-column: 1;
-        grid-row: 1;
-      }
-      &.bras--droit{
-        grid-column: 2 ;
-        grid-row: 1;
-      }
-      img{
-        width: 50vh
-      }
-
-
-
+  @include tablet{
+    .header{
+      background-position: 0 0px;
     }
-
+    .h2{
+      text-align: center;
+      &::after{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    p{
+      text-align: center;
+    }
   }
-
-  .about2{
-
-    h2{
-      float: right;
-    }
-
-    .bras{
-      display: block;
-
-      img{
-        width: 50vh
-      }
-
-      // &.bras--gauche{
-      //   float: left;
-      // }
-      // &.bras--droit{
-      //   float: right;
-      // }
-
-    }
-
-  }
-
 
 }

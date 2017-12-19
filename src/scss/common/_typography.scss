@@ -27,6 +27,11 @@ a{
     margin-bottom: 43px;
     background-color: $primary;
   }
+  &.right{
+    &::after{
+      margin-left: auto;
+    }
+  }
 }
 
 .h3 {
@@ -73,5 +78,8 @@ ul{
 @include mobile {
   .h2 {
     font-size: 20px;
+  }
+  p{
+    font-size: 16px;
   }
 }

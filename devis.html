@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Africtra : traduction et interprétation.">
+
+  <link rel="stylesheet" href="dist/bundle.css">
+
+  <title>Africtrad : traduction, interprétation et cours de langues en ligne.</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="src/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="src/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="src/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="src/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="src/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="src/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="src/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="src/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="src/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="src/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="src/img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="src/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="devis">
+  <!-- HEADER -->
+  <header class="header full container" role="banner">
+    <div class="content">
+      <h1 class="header_h1">Devis et forfaits</h1>
+    </div>
+  </header>
+  <!-- NAV -->
+  <nav class="nav__main container" role="navigation">
+    <div class="content">
+      <ul class="list list--inline">
+        <li class="item logo" role="menuitem"><a href="/"><img src="./src/img/logo-solo.svg" alt="Logo de africtrad"></a></li>
+        <li class="item" role="menuitem"><a href="/">Accueil</a></li>
+        <li class="item" role="menuitem"><a href="about.html">A propos</a></li>
+        <li class="item" role="menuitem"><a href="services.html">Services</a></li>
+        <li class="item active" role="menuitem"><a href="devis.html">Devis & forfaits</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main role="main">
+    <!-- SECTION 1 -->
+      <section class="container amorce_contact">
+        <div class="content">
+          <div class="texte">
+              <p>Afin de vous faciliter la vie, <strong>Africtrad</strong> a mis au point un système innovant de forfaits. Ne vous tracassez plus avec les devis
+                pour chaque projet. Envoyez juste votre document !</p>
+              <p>Souscrivez un forfait, et le tour est joué ! Nous recevons votre demande de traduction, nous l'exécutons et vous la livrons avec le nouveau
+              solde de votre compte de mots.</p>
+          </div>
+          <div class="btn_contact center">
+              <a href="/#contact" role="button" class="btn">Nous Contacter</a>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION 2 -->
+      <section class="container form_devis">
+          <div class="content center">
+            <h2 class="h2">Demande de devis</h2>
+              <div class="form form_devis">
+                <form>
+                  <div class="ligne1">
+                  <label for="name">Nom*</label>
+                  <input type="text" name="name" required>
+
+                  <label for="surname">Prénom*</label>
+                  <input type="text" name="surname" required>
+                </div>
+                <div class="ligne2">
+                  <label for="email">Email*</label>
+                  <input type="email" name="email" required>
+
+                  <label for="service">Service*</label>
+                  <input type="text" name="service" required>
+                </div>
+                <div class="ligne3">
+                  <label for="langueS">Langue source*</label>
+                  <input type="text" name="langueS" required>
+
+                  <label for="langueA">Langue d'arrivée*</label>
+                  <input type="text" name="langueA" required>
+                </div>
+                <div class="ligne4">
+                  <label for="message">Message*</label>
+                  <textarea name="message" required></textarea>
+                </div>
+                  <input type="submit" class="btn" value="Envoyer">
+                </form>
+            </div>
+          </div>
+      </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer__main container">
+    <div class="content">
+      <p><a href=#>CGU</a> / <a href="">Plan du site</a> / <a href="">FAQ</a><br/>
+         Copyright Africtrad 2011 / 2017 © Tous droits réservés</p>
+    </div>
+  </footer>
+
+
+</body>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="dist/bundle.js"></script>
+
+
+</html>

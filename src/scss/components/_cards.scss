@@ -1,0 +1,37 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+  .card_content {
+    background-image: url('#{$pathIMG}/icons/card.png');
+    filter: drop-shadow($shadow);
+    position: relative;
+    width: 300px;
+    height: 273px;
+    padding-top: 30px;
+    .card_text {
+      padding: 0 20px 0 20px;
+      margin: auto;
+    }
+    .icon {
+      position: absolute;
+      top: -85px;
+      right: 48%;
+      transform: translateX(50%);
+    }
+    a {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      border: none;
+      border-radius: 0;
+      color: $black;
+      background-color: #e5e5e5;
+      &:hover {
+        color: $primary;
+        transition: color 300ms ease-in-out;
+      }
+    }
+  }
+}

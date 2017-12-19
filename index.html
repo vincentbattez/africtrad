@@ -32,9 +32,6 @@
 </head>
 
 <body class="homepage">
-
-
-
   <!-- HEADER -->
   <header class="header header--full container" role="banner">
     <div class="content">
@@ -44,17 +41,20 @@
       <img class="arrow" src="src/img/icons/down-arrow.svg">
     </div>
   </header>
+
   <!-- NAV -->
   <nav class="nav__main container" role="navigation">
     <div class="content">
-      <ul class="list">
-        <li class="item" role="menuitem">Accueil</li>
-        <li class="item" role="menuitem">A propos</li>
-        <li class="item" role="menuitem">Services</li>
-        <li class="item" role="menuitem">Devis & forfaits</li>
+      <ul class="list list--inline">
+        <li class="item logo" role="menuitem"><a href="/"><img src="./src/img/logo-solo.svg" alt="Logo de africtrad"></a></li>
+        <li class="item active" role="menuitem"><a href="/">Accueil</a></li>
+        <li class="item" role="menuitem"><a href="apropos.html">A propos</a></li>
+        <li class="item" role="menuitem"><a href="services.html">Services</a></li>
+        <li class="item" role="menuitem"><a href="devis.html">Devis & forfaits</a></li>
       </ul>
     </div>
   </nav>
+
   <!-- MAIN CONTENT -->
   <main role="main">
     <!-- SECTION 1 -->
@@ -95,33 +95,33 @@
         <p>Africtrad vous accompagne avec un service de qualité internationnale.</p>
         <p>La précision, la ponctualité et la qualité font notre ADN !</p>
 
+    <div class="content">
+
       <div class="cards">
-        <div class="card">
-          <img src="src/img/icons/trad.png">
-          <img src="src/img/icons/card.png">
+        <div class="card_content">
+          <img class="icon" src="src/img/icons/trad.png">
           <h2 class="card_title">Traduction</h2>
-          <p class="card_content">Chez Africtrad, nous traduisons à partir et vers les principales langues
+          <p class="card_text">Chez Africtrad, nous traduisons à partir et vers les principales langues
             de travail internationales : français, anglais, espagnol, portugais, arabe.</p>
           <a href="#" role="button" class="btn">En savoir plus</a>
         </div>
 
-        <div class="card">
-          <img src="src/img/icons/cours.png">
-          <img src="src/img/icons/card.png">
+        <div class="card_content">
+          <img class="icon" src="src/img/icons/cours.png">
           <h2 class="card_title">Cours de langue</h2>
-          <p class="card_content">Rédaction de courriers électroniques, présentation de rapports
+          <p class="card_text">Rédaction de courriers électroniques, présentation de rapports
             ou rendez-vous téléphoniques, nous vous aiderons à tout maitriser.</p>
           <a href="#" role="button" class="btn">En savoir plus</a>
         </div>
 
-        <div class="card">
-          <img src="src/img/icons/interpretation.png">
-          <img src="src/img/icons/card.png">
+        <div class="card_content">
+          <img class="icon" src="src/img/icons/interpretation.png">
           <h2 class="card_title">Interprétation</h2>
-          <p class="card_content">Africtrad propose également un service d’interprétation de qualité internationale.
+          <p class="card_text">Africtrad propose également un service d’interprétation de qualité internationale.
             Nous mettons à votre disposition nos équipes d’interprètes professionnels.</p>
           <a href="#" role="button" class="btn">En savoir plus</a>
         </div>
+
       </div>
     </div>
     </section>
@@ -201,6 +201,7 @@
     </div>
 
   </main>
+
   <!-- FOOTER -->
   <footer class="footer__main container">
     <div class="content">
@@ -208,8 +209,6 @@
          Copyright Africtrad 2011 / 2017 © Tous droits réservés</p>
     </div>
   </footer>
-
-
 
 </body>
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>

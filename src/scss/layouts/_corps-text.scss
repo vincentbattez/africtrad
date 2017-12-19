@@ -1,5 +1,5 @@
 .corps-text {
-  // se symbole ">" veut dire : ENFANT DIRECT
+  // ce symbole ">" veut dire : ENFANT DIRECT
   & > section {
     display: flex;
     .texte_image{
@@ -29,7 +29,7 @@
 
     }
     &:nth-child(odd) {
-      // impaire
+      // impair
       .image{
         order: 2;
       }

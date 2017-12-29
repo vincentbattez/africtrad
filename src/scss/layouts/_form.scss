@@ -16,6 +16,18 @@ input,select {
     cursor: pointer;
   }
 }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('#{$pathIMG}/form/arrow.svg') 98% / 4% no-repeat $grey;
+}
+
+/* CAUTION: IE hackery ahead */
+select::-ms-expand { 
+    display: none; /* remove default arrow on ie10 and ie11 */
+}
+
 label{
   display: block;
   text-align: left;

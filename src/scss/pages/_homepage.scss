@@ -37,3 +37,46 @@
     }
   }
 }
+
+@include tablet {
+  .homepage {
+    .img-services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      text-align: center;
+    }
+  }
+}
+
+@include tablet {
+  .homepage {
+    .infos {
+      .coordonnees {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .homepage {
+    .img-services {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      text-align: center;
+    }
+    .infos {
+      display: grid;
+      grid-template-columns: 1fr;
+      .form {
+        margin: 0;
+        width: 100%;
+      }
+      .coordonnees {
+        padding-left: 0;
+      }
+    }
+  }
+}

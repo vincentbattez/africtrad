@@ -2,16 +2,21 @@ $mtfooter: 30px;
 .footer__main {
   background-color: $black;
   margin-top: $mtfooter;
-  p{
+  p {
     margin: 0;
     color: white;
     text-align: center;
     padding: 15px 0;
-    a{
+    a {
       color: white;
-      &:hover{
+      &:hover {
         color: $primary;
       }
+    }
+  }
+  @include mobile {
+    p {
+      font-size: 11px;
     }
   }
 }

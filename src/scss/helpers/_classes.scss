@@ -36,11 +36,10 @@
 .right{ text-align: right; }
 
 .diago {
-  margin-top: 70px;
-  margin-bottom: 70px;
   padding-top: 80px;
   padding-bottom: 110px;
   position: relative;
+  overflow: hidden;
   &:after,
   &:before {
     width: 100%;
@@ -79,5 +78,9 @@
 @include mobile {
   .hide_mobile {
     display: none !important;
+  }
+  .diago{
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 }

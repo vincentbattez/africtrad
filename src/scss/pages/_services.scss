@@ -1,22 +1,37 @@
 .services {
-  .header{
+  .header {
     background-image: url('#{$pathIMG}/services/header-services.jpg');
   }
-  .cours{
-    .list{
+  .cours {
+    .list {
       display: inline-block;
       width: 70%;
       margin: 0 auto;
       margin-top: 45px;
-      .type{
+      .type {
         font-family: 'Open Sans', Helvetica, Roboto, Arial, sans-serif;
         font-weight: normal;
         font-size: $p;
       }
     }
   }
-  .devis{
+  .devis {
     margin-top: 80px;
     margin-bottom: -$mtfooter;
+  }
+  @include mobile {
+    .cours {
+      p{
+        text-align: left;
+      }
+     .list{
+       width: 100%;
+       margin-top: 0;
+       text-align: left;
+       .item{
+         display: block;
+       }
+     } 
+    }
   }
 }

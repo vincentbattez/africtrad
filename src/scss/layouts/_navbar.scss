@@ -1,49 +1,96 @@
 .nav__main {
   img {
-    width          : 50px;
-    margin-right   : 20px;
-    vertical-align : middle;
+    width: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
   }
-
+  .list{
+    margin-top: 0;
+  }
   .item {
     a {
-      margin-right : 20px;
-      transition   : all 300ms;
+      margin-right: 20px;
+      transition: all 300ms;
     }
-
     &:before {
-      content          : '';
-      display          : inline-block;
-      position         : relative;
-      width            : 10px;
-      height           : 10px;
-      margin-right     : 10px;
-      border-radius    : 50%;
-      background-color : $secondary!important;
+      content: '';
+      display: inline-block;
+      position: relative;
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background-color: $secondary!important;
     }
-
     &.active:before {
-      background-color : $primary!important;
+      background-color: $primary!important;
     }
-
     &.logo:before {
-      display : none;
+      display: none;
     }
-
     &:hover a {
-      color : $primary;
+      color: $primary;
+    }
+  }
+  .list.list--inline .item.logo{
+    margin-left: 0;
+  }
+      .logo{
+        margin: 0;
+        margin-top: 15px;
+      }
+  &.open {
+    .content{
+      padding: 0;
+    }
+    .item {
+      display: block!important;
+      &:not(.logo, .hamburger) {
+        padding: 15px $gap-global-small;
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      &:before{
+        display: none;
+      }
+    }
+    .logo {
+      background: #f0f0f0;
+      padding: 15px $gap-global-small;
+      margin-top: 0;
+    }
+    .list .hamburger{
+      right: 30px;
     }
   }
 }
 
 @include mobile(min) {
-  .list.list--inline .item.hamburger{
+  .list.list--inline .item.hamburger {
     display: none;
   }
 }
+
 @include mobile {
   .nav__main {
     .list {
+      .hamburger {
+        line-height: 80px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0 10px;
+        cursor: pointer;
+        &:before {
+          display: none;
+        }
+        img {
+          margin: 0 auto;
+          width: 30px;
+          height: 30px;
+        }
+      }
       .item:not(.logo, .hamburger) {
         display: none;
       }

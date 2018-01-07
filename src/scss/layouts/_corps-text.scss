@@ -1,36 +1,33 @@
 .corps-text {
   // ce symbole ">" veut dire : ENFANT DIRECT
-  & > section {
+  &>section {
     display: flex;
-    .texte_image{
+    .texte_image {
       display: flex;
-      &.image--left{
-        .image{
+      &.image--left {
+        .image {
           margin-right: 25px;
         }
       }
-
-      &.image--right{
-        .image{
+      &.image--right {
+        .image {
           margin-left: 25px
         }
       }
-
-      .image{
-        img{
+      .image {
+        img {
           width: 300px;
         }
       }
-      .texte{
-        a{
+      .texte {
+        a {
           color: $primary
         }
       }
-
     }
     &:nth-child(odd) {
       // impair
-      .image{
+      .image {
         order: 2;
       }
       .texte {
@@ -40,7 +37,7 @@
     }
     &:nth-child(even) {
       // paire
-      .image{
+      .image {
         order: 1;
       }
       .texte {
@@ -49,33 +46,32 @@
       }
     }
   }
-
-
-
-  @include tablet{
-    & > section {
-      .texte_image{
+  @include tablet {
+    &>section {
+      .texte_image {
         flex-direction: column;
-        .image{
+        .image {
           margin-left: auto;
           margin-right: auto;
-          img{
+          img {
             margin: auto;
             text-align: center;
             width: 250px;
           }
         }
       }
-
       &:nth-child(odd) {
         // impaire
-        .image{
+        .image {
           order: 1;
         }
         .texte {
           order: 2;
         }
       }
+    }
+    .texte {
+      margin: 0 !important;
     }
   }
 }

@@ -47,10 +47,13 @@
 }
 
 @include mobile {
-    .cards {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-row-gap: 120px;
-      text-align: center;
-    }
+  .content .content {
+    padding: 0 10px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 120px;
+    text-align: center;
+  }
 }

@@ -45,14 +45,23 @@
     }
     .item {
       display: block!important;
+      &:before{
+        display: none;
+      }
       &:not(.logo, .hamburger) {
-        padding: 15px $gap-global-small;
         text-align: center;
         margin: 0;
         border-bottom: 1px solid #f0f0f0;
       }
-      &:before{
-        display: none;
+      &.logo{
+        a {
+          padding: 0 !important;
+        }
+      }
+      a{
+        width: 100%;
+        padding: 15px $gap-global-small;
+        display: block;
       }
     }
     .logo {

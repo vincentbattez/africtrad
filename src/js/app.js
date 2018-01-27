@@ -1,7 +1,5 @@
 console.log("ready!");
-
-// Import les librairies
-import './lib/unelib';
+import 'jquery';
 
 // Import toutes les pages et le commun
 import Router from './util/Router';

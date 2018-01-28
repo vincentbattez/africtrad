@@ -19,7 +19,11 @@ $gap-global-small: 30px;
 
 $maxwidth-global: 1024px;
 
-// Medias
-$mobile: 767px;
-$tablet: 991px;
-$desktop: 991px;
+
+/*------------------------------------*\
+    $ MEDIAS
+\*------------------------------------*/
+$mobile        : 767px; 
+$tablet        : 991px; 
+$desktop       : 991px; 
+$large-desktop : 1199.99px;

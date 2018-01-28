@@ -12,34 +12,37 @@
     bottom: 110px;
   }
   &.header--full {
-    background-image: url('#{$pathIMG}/homepage/header.jpg');
+    background-image: url('#{$pathIMG}/homepage/header-homepage.jpg');
     height: 100vh;
     .content {
       position: relative;
       right: 0;
       bottom: 0;
       transform: none;
-      max-width: none;
       height: 100vh;
     }
     .logo {
-      width: 40%;
-      padding: 40px;
+      width: 400px;
+      padding-top: 40px;
+      margin-bottom: 40px;
+      display: block;
+      margin-left: auto;
     }
     .header_h1 {
+      display: inline-block;
       text-align: left;
-      position: absolute;
-      left: 50%;
     }
     .header_h2 {
+      position: relative;
+      text-align: center;
       font-style: italic;
       color: #fff;
       font-size: 35px;
       font-weight: 100;
-      position: absolute;
-      left: 70%;
-      bottom: 15%;
     }
+  }
+  .header-content {
+
   }
   .header_h1{
     font-size: 64px;
@@ -73,24 +76,6 @@
   }
 }
 
-@media screen and(max-width: 1024px) {
-  .header {
-    &.header--full {
-      background-position: -290px;
-      .header_h1 {
-        font-size: 20px;
-        left: 10px;
-        bottom: 70px;
-        top: auto;
-      }
-      .header_h2 {
-        font-size: 40px;
-        left: 40%;
-        bottom: 20%;
-      }
-    }
-  }
-}
 
 @include tablet {
   .header {
@@ -98,19 +83,9 @@
       background-position: -250px;
       .header_h1 {
         font-size: 40px;
-        left: 15%;
-        top: 60%;
       }
       .header_h2 {
         font-size: 32px;
-        left: 30%;
-        bottom: 20%;
-      }
-      .logo {
-        position: absolute;
-        left: 40%;
-        top: 10%;
-        padding: 10px;
       }
     }
   }
@@ -120,39 +95,37 @@
   .header{
     .content{
       bottom: 40px;
+      width: 100%;
     }
     .header_h1{
       font-size: 30px;
     }
     &.header--full {
+      background-position: -290px;
       .header_h1 {
-        font-size: 24px;
-        left: 10%;
-        top: 70%;
+        font-size: 20px;
+        left: 10px;
+        bottom: 70px;
+        top: auto;
       }
-      background-position: -200px;
       .header_h2 {
         font-size: 20px;
-        left: 20%;
-        bottom: 10%;
       }
       .logo {
-        left: 35%;
-        top: 5%;
-        width: 60%;
+        width: 200px;
       }
     }
   }
 }
 
-@include landscape {
-  .header {
-    &.header--full {
-      background-position: center;
-      background-size: cover;
-      .header_h2{
-        bottom: 10px;  
-      }
-    }
-  }
-}
+// @include landscape {
+//   .header {
+//     &.header--full {
+//       background-position: center;
+//       background-size: cover;
+//       .header_h2{
+//         bottom: 10px;  
+//       }
+//     }
+//   }
+// }

@@ -3,6 +3,11 @@
     @content;
   }
 }
+@mixin large-desktop {
+  @media screen and (min-width: #{$large-desktop}) {
+    @content;
+  }
+}
 
 @mixin tablet($minmax: max) {
   @media screen and (#{$minmax}-width: #{$tablet}) {

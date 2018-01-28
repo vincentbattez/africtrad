@@ -5,18 +5,33 @@
   color: $primary;
   text-transform: uppercase;
   display: inline-block;
+  &:hover {
+    background-color: $primary;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .bg-primary{
   .btn{
     border-color: transparent;
     background-color: white;
+    &:hover {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+    }
   }
 }
+
 .btn_contact{
   .btn{
-  background-color: #FEA10C;
-  color: #fff;
-  margin: 25px 0px;
+    background-color: #FEA10C;
+    color: #fff;
+    margin: 25px 0px;
+    &:hover {
+      background-color: transparent;
+      color: $primary;
+    }
   }
 }
